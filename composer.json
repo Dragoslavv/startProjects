@@ -1,0 +1,11 @@
+{
+    "name": "dragoslav/chillprojects",
+    "description": "my chill projects",
+    "authors": [
+        {
+            "name": "dragoslav",
+            "email": "gagi.predojevic93@hotmail.com"
+        }
+    ],
+    "require": {}
+}
