@@ -7,9 +7,5 @@
  **/
 require __DIR__.'/../vendor/autoload.php';
 
-/**
- *
- */
-$users = new \App\Controller\UsersController();
-$user =  new \App\Model\User();
-$db = new \App\Database\Config();
+$user = new \App\Model\User();
+new \App\Controller\UsersController();
