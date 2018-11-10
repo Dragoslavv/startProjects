@@ -8,7 +8,8 @@
         }
     ],
     "require": {
-        "illuminate/support": "^5.7"
+        "illuminate/support": "^5.7",
+        "illuminate/routing": "^5.7"
     },
     "require-dev": {
         "illuminate/container": "^5.7"
