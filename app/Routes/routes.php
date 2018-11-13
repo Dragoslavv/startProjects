@@ -1,6 +1,14 @@
 <?php
 
-Router::group(['middleware' => 'guest'], function () {
+use App\Controller;
 
-    Router::get('/login', ['as' => 'user.auth.index', 'uses' => 'Auth\AuthController@login']);
-});
+switch($_GET['p']){
+
+    case 'services':
+        require '../../resources/views/default.php';
+        break;
+
+    default:
+        header("HTTP/1.0 404 Not Found");
+        break;
+}
