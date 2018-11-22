@@ -1,14 +1,12 @@
 <?php
 
-use App\Controller;
+Route::set('index.php',function (){
+    \App\Controller\HomeController::get('index');
+});
 
-switch($_GET['p']){
-
-    case 'services':
-        require '../../resources/views/default.php';
-        break;
-
-    default:
-        header("HTTP/1.0 404 Not Found");
-        break;
-}
+Route::set('avioTravel',function (){
+   \App\Controller\ViewController::get('avioTravel');
+});
+Route::set('users',function (){
+    \App\Controller\UsersController::get('users');
+});

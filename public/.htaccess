@@ -1,16 +1,6 @@
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews
-    </IfModule>
 
-    RewriteEngine on
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|node_modules|images|robots\.txt)
+RewriteRule ^([^/]+)/? index.php?url=$1 [QSA,L]
 
-    RewriteBase /routing_test/
 
-    RewriteCond %{REQUEST_FILENAME} !-l
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-
-    RewriteRule ^(.*)$ index.php [QSA,L]
-
-</IfModule>

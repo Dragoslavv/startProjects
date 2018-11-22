@@ -2,10 +2,10 @@
 namespace App\Model;
 use App\Database\DB;
 
-class User
+class View
 {
 
-    function all_users()
+    function all_view()
     {
         $users = DB::getInstance()->query("SELECT * FROM `traveler`");
         if($users->count()) {

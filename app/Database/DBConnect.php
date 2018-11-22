@@ -7,7 +7,7 @@ class DB{
             $_query,
             $_results = array(),
             $_count = 0;
-    public static $_instance; //The single instance
+    public static $_instance; //The Singleton pattern instance
 
     /**
      * Get an instance of the Database
@@ -24,12 +24,11 @@ class DB{
      * DB constructor.
      */
     public function __construct() {
-        $this->_mysqli = new \mysqli("localhost","admin","admin4321","instance_db");
 
-        // Error handling
-        if ( !$this->_mysqli )
-        {
-            die("Connection error: " . mysqli_connect_error());
+        try {
+            $this->_mysqli = new \mysqli("localhost","admin","admin4321","instance_db");
+        } catch (\Exception $e) { // Exception handling
+            echo 'ERROR:'.$e->getMessage();
         }
     }
 

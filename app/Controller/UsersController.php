@@ -1,32 +1,30 @@
 <?php
 namespace App\Controller;
 use App\Model;
+use App\Controller\Controller as Controller;
 
-class UsersController{
+class UsersController extends Controller {
 
-    function __construct(){
-        $this->User  = new Model\User();
-    }
-
-    function index(){
-        $this->User->all_users();
+    public static function something(){
+       $d = new Model\User();
+        $d->all_users();
     }
     function create(){
-
+        //ToDo
     }
     function edit(){
-
+        //ToDo
     }
     function save(){
-
+        //ToDo
     }
     function store(){
-
+        //ToDo
     }
     function update(){
-
+        //ToDo
     }
     function destroy(){
-
+        //ToDo
     }
 }
