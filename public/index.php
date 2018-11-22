@@ -18,8 +18,8 @@ $App = require __DIR__.'/../vendor/autoload.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chill">
     <meta name="keywords" content="">
-    <title>Test for Vivify ideas | Travel & Avio</title>
-    <!--->
+    <title>Chill projects</title>
+    <!---->
     <!-- Favicons -->
     <link href="favicon.ico" rel="icon">
     <!-- Google Fonts -->
