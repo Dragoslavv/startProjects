@@ -1,2 +1,1 @@
-<?php
-echo 'Welcome !';
+<p>Dragoslav  Predojevic</p> <?php var_dump($data['name']); ?>

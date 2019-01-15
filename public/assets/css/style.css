@@ -166,8 +166,8 @@ footer {
     width:100%;
     background-image: linear-gradient(to right,#252b2b,#494c4c);
     min-height:250px;
-    padding:10px 0 25px 0
-;}
+    padding:10px 0 25px 0;
+}
 
 footer p {
     font-size:13px;

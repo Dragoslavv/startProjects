@@ -1,5 +1,5 @@
 {
-    "name": "dragoslav/vivify",
+    "name": "dragoslav/chillprojects",
     "description": "Create new projects",
     "authors": [
         {
@@ -9,7 +9,7 @@
     ],
     "require": {
         "illuminate/support": "^5.7",
-        "php": "^7.2"
+        "php": "^7.1"
     },
     "require-dev": {
         "illuminate/container": "^5.7"
@@ -22,7 +22,7 @@
             "App\\": "app"
         },
         "classmap": [
-            "app/Database"
+            "app/Model"
         ]
     }
 }

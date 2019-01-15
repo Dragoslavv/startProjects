@@ -26,7 +26,7 @@ class DB{
     public function __construct() {
 
         try {
-            $this->_mysqli = new \mysqli("localhost","admin","admin4321","instance_db");
+            $this->_mysqli = new \mysqli("localhost","admin","admin4321","procescom");
         } catch (\Exception $e) { // Exception handling
             echo 'ERROR:'.$e->getMessage();
         }
