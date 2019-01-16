@@ -1,9 +1,6 @@
 <?php
 namespace App\Requests;
 
-use App\config\Controller;
-use App\Model;
-
 
 class Request {
     public function __construct() {
