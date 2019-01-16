@@ -7,7 +7,7 @@ class homeController extends Controller {
 
 public function index()
 {
-    echo 'home';
+    echo 'this is home controller';
 }
 
 }

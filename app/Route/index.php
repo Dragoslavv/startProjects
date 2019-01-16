@@ -6,7 +6,9 @@ use App\Controller\UserController;
 
 $routes = new Routes();
 
-$routes->get('index', homeController::class,[]);
-$routes->delete('home', homeController::class,[]);
-$routes->post('home', homeController::class, []);
-$routes->put('home', homeController::class, []);
+$routes->get('index', homeController::class);
+$routes->get('home', UserController::class);
+
+//$routes->delete('home', homeController::class);
+//$routes->post('home', homeController::class);
+//$routes->put('home', homeController::class);

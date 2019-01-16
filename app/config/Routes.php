@@ -9,23 +9,22 @@ class Routes extends Request {
     private $controller;
     private $view;
 
-    public function get( $view, $controller, $array = [] ){
+    public function get( $view, $controller ){
         $this->view = $view;
         $this->controller = $controller;
 
         if($this->view === $_GET['url']){
-            echo $this->view;
-
+            require_once __DIR__.'/../Controller/' . $this->controller . '.php';
         }
 
     }
-    public function put( $view, $controller, $array = [] ){
+    public function put( $view, $controller ){
 
     }
-    public function post( $view, $controller, $array = [] ){
+    public function post( $view, $controller ){
 
     }
-    public function delete( $view, $controller, $array = [] ){
+    public function delete( $view, $controller ){
 
     }
 
