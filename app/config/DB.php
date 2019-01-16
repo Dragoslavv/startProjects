@@ -7,6 +7,7 @@ class DB{
             $_query,
             $_results = array(),
             $_count = 0;
+
     public static $_instance; //The Singleton pattern instance
 
     /**

@@ -15,13 +15,6 @@ ini_set('display_errors', 1);
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-require_once __DIR__ . '/../app/config/database.php';
+require_once __DIR__."./../app/Route/index.php";
 
-require_once __DIR__ . '/../app/config/App.php';
-
-$App = new \App\config\App();
-
-require_once __DIR__ . '/../app/config/Controller.php';
-
-require_once __DIR__.'/../app/Controller/homeController.php';
 ?>

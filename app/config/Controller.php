@@ -1,21 +1,10 @@
 <?php
 namespace App\config;
 
+use App\Database\DB as DB;
 
-class Controller
+
+class Controller extends DB
 {
-
-    public function model($model)
-    {
-        require_once __DIR__ . '/../Model/' . $model . '.php';
-
-        $namespace = 'App\\Model\\' . $model;
-
-        return new $namespace;
-    }
-
-    public function view($view, $data = [])
-    {
-        require_once __DIR__ . '/../../resources/views/' . $view . '.php';
-    }
+    //todo
 }
