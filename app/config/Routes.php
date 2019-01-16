@@ -2,6 +2,7 @@
 
 namespace App\config;
 
+use App\Controller\UserController;
 use App\Requests\Request as Request;
 
 
@@ -14,7 +15,9 @@ class Routes extends Request {
         $this->controller = $controller;
 
         if($this->view === $_GET['url']){
-            require_once __DIR__.'/../Controller/' . $this->controller . '.php';
+            require_once __DIR__.'/../Controller/UserController.php';
+            $test = UserController::getInstance();
+            var_dump($test);
         }
 
     }

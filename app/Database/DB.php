@@ -27,7 +27,7 @@ class DB{
     public function __construct() {
 
         try {
-            $this->_mysqli = new \mysqli("localhost","admin","admin4321","procescom");
+            $this->_mysqli = new \mysqli("localhost","root","Admin_4321","react_api");
         } catch (\Exception $e) { // Exception handling
             echo 'ERROR:'.$e->getMessage();
         }
